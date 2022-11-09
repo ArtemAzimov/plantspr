@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="flex" style="margin-top: 15%">
+    <div class="box">
+        <h2>{{ the_title }}</h2>
+    </div>
+    <div class="box">
+        <table>
+            <tbody>
+                <tr><td>Вы добавили растение:</td><td>{{ the_plant_name }}</td></tr>
+                <tr><td style="vertical-align: top">Ваши растения:</td><td style="max-width: 500px;">{{ the_rlog }}</td></tr>
+                <tr><td style="height: 10px;"></td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="box" style="margin-top: 10px">
+        <form action="/">
+            <input class="but" type="submit" value="Вернуться на главную страницу">
+        </form>
+    </div>
+</div>
+
+{% endblock %}

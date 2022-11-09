@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="flex">
+    <div class="box"><img src="/static/header1.jpg" alt="header1" width="50" height="50"></div>
+
+    <div class="box"><h2>{{ the_title }}</h2></div>
+
+    <form action="/registerpage" method="get">
+        <div class="box"><input class="but1" type="submit" value="Регистрация"></div>
+    </form>
+    <form action="/authpage" method="get">
+        <div class="box"><input class="but1" type="submit" value="Войти"></div>
+    </form>
+
+    <div class="box">
+        <form method="POST" action="/new_plant">
+            <p>Добавить растение</p>
+            <table>
+                <tbody>
+                    <tr><td style="width: 250px;">Введите название растения: </td><td><input name="plant_name" type="TEXT" width="60"></td></tr>
+                    <tr><td></td><td style="height:35px; text-align: center;"><input class="but" value="Добавить" type="SUBMIT"></td></tr>
+                </tbody>
+            </table>
+            <p></p>
+            </form>
+    </div>
+<!--  -->
+    <div class="box">
+        <form method="POST" action="/calc_date">
+        <p>Расчет дней до/от полива растения.</p><table>
+
+        <tbody><tr><td style="width: 250px;">Введите день полива: </td><td><input name="water_date" type="TEXT" width="60"></td></tr>
+            <tr><td style="vertical-align: top;">(в формате дд.мм.гггг)</td><td style="height:35px; text-align: center;"><input class="but" value="Посчитать" type="SUBMIT"></td></tr>
+        </tbody></table>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+</body></html>

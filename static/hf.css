@@ -1,0 +1,66 @@
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table{
+  border: 1px solid #9e9e9eb4;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  /* background-color: aqua;
+  border: 1px solid #4a9c63 */
+}
+
+input[type=text]{
+  height: 20px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.but{
+  position:relative;
+  width: fit-content;
+  background-color: rgb(119, 184, 119);
+  color: black;
+  font-size:        100%;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0px;
+}
+.but:hover{
+  background-color: rgb(141, 206, 128);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.but1{
+  position:relative;
+  width: fit-content;
+  background-color: rgba(119, 184, 119, 0);
+  color: black;
+  font-size:        100%;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0px;
+}
+.but1:hover{
+  background-color: rgb(141, 206, 128);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}

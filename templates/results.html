@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<table>
+<tbody>
+    <tr><td>Сегодня:</td><td>{{ the_current_date }}</td></tr>
+    <tr><td>Введеная дата:</td><td>{{ the_water_date }}</td></tr>
+</tbody></table>
+
+<h3>{{ the_results }}</h3>
+
+{% endblock %}

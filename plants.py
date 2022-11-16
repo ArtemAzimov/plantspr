@@ -31,3 +31,12 @@ def date_input(water_date):
             return f'Дней от предыдущего полива:  {delta_days.days}'
     else:
         return('Введите дату не ранее 2022 года в формате дд.мм.гггг')
+
+def user_date():
+    #Поливать 1 раз(а) в день/неделю/месяц - выпадающий список зависимость 7/30,31,27,28/364,365
+    #Выбрать дни недели [пн][вт][ср][чт][пт][сб][вс]
+    #[x][][][][x][]
+    #SQL table Plants | plantID, userID, plantName, creationDate, wateringDay, wateringFreq, soilDay, soilFreq |
+    #кодировка wateringDay: MonTueWedThuFriSatSun
+    #кодировка wateringFreq: NUM day/week/month
+    pass

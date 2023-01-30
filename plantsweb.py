@@ -37,7 +37,7 @@ def new_plant():
 #authpage
 @app.route('/authpage', methods=['GET'])
 def authpage():
-    return render_template('authpage.html')
+    return render_template('authpage.html', the_title = "Вход")
 
 #MySQL connection configuration
 conconfig = {'host' : '127.0.0.1',

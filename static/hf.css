@@ -1,27 +1,41 @@
 
 body{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Consolas';
 }
 
-table{
-  border: 1px solid #9e9e9eb4;
-}
 
-.flex {
-  display: flex;
-  flex-direction: column;
-}
-
-.box {
-  flex-grow: 1;
+.top_box{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: auto;
-  height: auto;
-  /* background-color: aqua;
-  border: 1px solid #4a9c63 */
+  background-color: rgb(133, 231, 231);
+  border: 2px solid #1a7535;
 }
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 2px dotted #000000;
+}
+
+.box div {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  min-width: 100px;
+  max-width: max-content;
+  height: 50px;
+  background-color: rgb(133, 231, 231);
+  border: 2px solid #1a7535;
+}
+
+
+
+
+
+
 
 input[type=text]{
   height: 20px;
@@ -30,6 +44,7 @@ input[type=text]{
 }
 
 .but{
+  font-family: inherit;
   position:relative;
   width: fit-content;
   background-color: rgb(119, 184, 119);

@@ -1,37 +1,9 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<form method="POST" action="/authproc">
-    <div class="top_box">    
-        <div><h2>{{the_title}}</h2></div>
+<div class="flex">
+    <div>
+        
     </div>
-    <div class="box">    
-        <div>Логин:</div>
-        <div><input name="user" type="TEXT" width="60"></div>
-    </div>
-    <div class="box"> 
-        <div>Пароль:</div>
-        <div><input name="passw" type="TEXT" width="60"></div>
-    </div>
-    <div class="top_box"> 
-        <div><input class="but" value="ВОЙТИ" type="SUBMIT"></div>
-    </div>
-</form>
-
-
-    <!-- <div class="box">
-        <form method="POST" action="/authproc">
-            <table style="border: 0px; margin-top: 30px;">
-                <tbody>
-                    <tr><td style="width: 250px;">Логин: </td><td><input name="user" type="TEXT" width="60"></td></tr>
-                    <tr><td style="width: 250px;">Пароль: </td><td><input name="passw" type="TEXT" width="60"></td></tr>
-                    <tr><td></td><td style="text-align: center"><input class="but" style="margin-top: 10px" value="ВОЙТИ" type="SUBMIT"></td></tr>
-                        
-                </tbody>
-            </table>
-        </form>
-    </div> -->
-
-
+</div>
 {% endblock %}
-</body></html>

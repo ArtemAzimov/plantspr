@@ -1,0 +1,81 @@
+
+body{
+  font-family: 'Consolas';
+}
+
+
+.top_box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(133, 231, 231);
+  border: 2px solid #1a7535;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 2px dotted #000000;
+}
+
+.box div {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  min-width: 100px;
+  max-width: max-content;
+  height: 50px;
+  background-color: rgb(133, 231, 231);
+  border: 2px solid #1a7535;
+}
+
+
+
+
+
+
+
+input[type=text]{
+  height: 20px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.but{
+  font-family: inherit;
+  position:relative;
+  width: fit-content;
+  background-color: rgb(119, 184, 119);
+  color: black;
+  font-size:        100%;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0px;
+}
+.but:hover{
+  background-color: rgb(141, 206, 128);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.but1{
+  position:relative;
+  width: fit-content;
+  background-color: rgba(119, 184, 119, 0);
+  color: black;
+  font-size:        100%;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0px;
+}
+.but1:hover{
+  background-color: rgb(141, 206, 128);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}

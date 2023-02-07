@@ -7,8 +7,10 @@ app = Flask(__name__)
 #entry page
 @app.route('/')
 def entry_page():
-    return render_template('entry.html',
-                           the_title = 'Учет полива растений')
+        return render_template('mainpage.html',
+                           the_title = 'Учет полива растений', the_date = date_format())
+    # return render_template('entry.html',
+    #                        the_title = 'Учет полива растений')
 
 #result water date page
 @app.route('/calc_date', methods=['POST'])      
